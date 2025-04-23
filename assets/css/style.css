@@ -149,7 +149,7 @@ nav p {
 /* Features Section */
 .features-section {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin-top: 96px;
 }
 
@@ -536,4 +536,15 @@ nav p {
     background-color: green;
     border: 1px solid green;
     border-radius: 5px;
+}
+
+
+.feature-card {
+    position: relative;
+    overflow: hidden;
+    display: none;
+}
+
+.feature-card.active {
+    display: block;
 }
