@@ -81,3 +81,19 @@ let sign_in = document.getElementById("sign_in");
         function hideModal2(){
             sign_in.style.display="none";
         }
+
+
+
+/* Слайдер */
+const slides = document.querySelectorAll('.feature-card');
+        let currentIndex = 0;
+
+        function switchSlides() {
+            slides[currentIndex].classList.remove('active');
+            currentIndex++;
+            if (currentIndex >= slides.length) {
+                currentIndex = 0;
+            }
+            slides[currentIndex].classList.add('active');
+        }
+        setInterval(switchSlides, 5000);
